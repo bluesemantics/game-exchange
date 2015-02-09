@@ -1,0 +1,4 @@
+*.DS_Store
+platforms/android/bin
+platforms/ios/build
+platforms/ios/GameExchange.xcodeproj/project.xcworkspace/xcuserdata

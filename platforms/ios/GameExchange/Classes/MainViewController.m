@@ -67,6 +67,16 @@
 {
     // View defaults to full size.  If you want to customize the view's size, or its subviews (e.g. webView),
     // you can do so here.
+    
+    // handle iOS 7 transparent status bar
+    // according to http://stackoverflow.com/questions/19209781/ios-7-status-bar-with-phonegap
+    //Lower screen 20px on ios 7
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
+        CGRect viewBounds = [self.webView bounds];
+        viewBounds.origin.y = 20;
+        viewBounds.size.height = viewBounds.size.height - 20;
+        self.webView.frame = viewBounds;
+    }
 
     [super viewWillAppear:animated];
 }
@@ -75,6 +85,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // handle iOS 7 transparent status bar
+    // according to http://stackoverflow.com/questions/19209781/ios-7-status-bar-with-phonegap
+    //Lower screen 20px on ios 7
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
+        CGRect viewBounds = [self.webView bounds];
+        viewBounds.origin.y = 20;
+        viewBounds.size.height = viewBounds.size.height - 20;
+        self.webView.frame = viewBounds;
+    }
+    
+    self.view.backgroundColor = [UIColor blackColor];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)viewDidUnload

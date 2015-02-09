@@ -21,5 +21,13 @@ module.exports = [
             "navigator.splashscreen"
         ]
     }
-]
+];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "com.phonegap.plugins.barcodescanner": "1.0.1",
+    "org.apache.cordova.dialogs": "0.2.2",
+    "org.apache.cordova.splashscreen": "0.2.4"
+}
+// BOTTOM OF METADATA
 });

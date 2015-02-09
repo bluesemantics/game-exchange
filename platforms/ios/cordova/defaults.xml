@@ -11,10 +11,6 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
     <access origin="*" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
@@ -30,4 +26,9 @@
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="false" />
 </widget>

@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.eurpac.gameexchange" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.eurpac.gameexchange" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>Game Exchange</name>
+    <content src="http://www.eurpac.com/gameex/?auth=76090641061" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
+    <access origin="*" />
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="fullscreen" value="false" />
@@ -16,15 +19,4 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
-    <name>Game Exchange</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@callback.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
 </widget>
